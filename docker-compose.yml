@@ -1,5 +1,7 @@
 node:
-  image: node:0.12
+  build: .
+  environment:
+    - NODE_ENV=development
   ports:
     - "8080:8080"
   volumes:
